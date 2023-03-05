@@ -1,0 +1,36 @@
+// 1. Úkol -> od 1 do 100 kromě 40 a 60
+for(int cislo = 1; cislo <= 100; cislo++)
+{
+    if(cislo == 40)
+    {
+        continue;
+    }
+    else if(cislo == 60)
+    {
+        continue;
+    }
+    Console.WriteLine(cislo);
+}
+// 2. Úkol -> obdélník z hvězdiček
+Console.WriteLine("**********");
+Console.WriteLine("*        *");
+Console.WriteLine("*        *");
+Console.WriteLine("**********");
+// 3. Úkol -> program, který vypíše počet uživatelem zadaných čísel
+int pocetCisel = 0;
+bool pokracovat = true;
+while (pokracovat)
+{
+    Console.Write("Zadejte číslo (pro ukončení zadejte 0): ");
+    int cislo = int.Parse(Console.ReadLine());
+    if (cislo != 0)
+    {
+        pocetCisel++;
+    }
+    else
+    {
+        pokracovat = false;
+    }
+}
+Console.WriteLine("Počet zadaných čísel je: " + pocetCisel);
+Console.ReadLine();
